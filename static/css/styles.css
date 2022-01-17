@@ -1,3 +1,11 @@
 a {
   text-decoration: none;
 }
+
+.nav-current {
+  font-weight: bold;
+}
+
+ul.contact {
+  list-style-type: none;
+}

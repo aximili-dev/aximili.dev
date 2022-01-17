@@ -5,13 +5,13 @@
     .col
       nav.h-100
         .row.h-100.align-items-center.justify-content-end
-          .col-sm-auto
+          .col-sm-auto(class = currentPage === "index" ? "nav-current" : "")
             a.link-dark(href="/") Home
-          .col-sm-auto
+          .col-sm-auto(class = currentPage === "projects" ? "nav-current" : "")
             a.link-dark(href="/projects") Projects
-          .col-sm-auto
+          .col-sm-auto(class = currentPage === "blog" ? "nav-current" : "")
             a.link-dark(href="/blog") Blog
-          .col-sm-auto
+          .col-sm-auto(class = currentPage === "about" ? "nav-current" : "")
             a.link-dark(href="/about") About
-          .col-sm-auto
+          .col-sm-auto(class = currentPage === "contact" ? "nav-current" : "")
             a.link-dark(href="/contact") Contact
