@@ -5,7 +5,6 @@ import cors from 'cors';
 import express, { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
 import { HttpError, NotFound } from 'http-errors';
 import morgan from 'morgan';
-import { http } from 'winston';
 
 import indexRouter from './routes/root';
 import { createLogger } from './util/logger';
