@@ -2,12 +2,12 @@ doctype html
 html(lang="en")
   head
     include includes/head.pug
-  body.min-vh-100
-    header.bg-light
+  body
+    header.bg-primary
       include includes/header.pug
 
-    main.container-sm.bg-body.myy-5
+    main.container-sm.bg-body.min-vh-100.my-5
       block content
 
-    footer.bg-light
+    footer.bg-primary
       include includes/footer.pug

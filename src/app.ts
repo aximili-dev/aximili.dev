@@ -19,9 +19,11 @@ else
   app.use(morgan('dev', { stream: { write: (str) => httpLogger.info(str.trim()) } }));
 
 // Set up middlewares
+const staticRoot = path.join(__dirname, '..', 'static');
+
 app.use(json());
 app.use(cors());
-app.use(express.static(path.join(__dirname, '..', 'static')));
+app.use(express.static(staticRoot));
 
 // Set up template engine
 app.set('view engine', 'pug');

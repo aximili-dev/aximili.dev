@@ -1,17 +1,18 @@
-.container-fluid.ps-3.pe-4.py-2
+.container-sm.ps-3.pe-4.py-2.text-light
   .row
     .col
-      h1 Ax
+      h1
+        a.link-info(href="/") Ax
     .col
       nav.h-100
         .row.h-100.align-items-center.justify-content-end
           .col-sm-auto(class = currentPage === "index" ? "nav-current" : "")
-            a.link-dark(href="/") Home
+            a.link-info(href="/") Home
           .col-sm-auto(class = currentPage === "projects" ? "nav-current" : "")
-            a.link-dark(href="/projects") Projects
+            a.link-info(href="/projects") Projects
           .col-sm-auto(class = currentPage === "blog" ? "nav-current" : "")
-            a.link-dark(href="/blog") Blog
+            a.link-info(href="/blog") Blog
           .col-sm-auto(class = currentPage === "about" ? "nav-current" : "")
-            a.link-dark(href="/about") About
+            a.link-info(href="/about") About
           .col-sm-auto(class = currentPage === "contact" ? "nav-current" : "")
-            a.link-dark(href="/contact") Contact
+            a.link-info(href="/contact") Contact

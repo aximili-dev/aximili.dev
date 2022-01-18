@@ -6,6 +6,6 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[{.stylelintrc,*.css,*.json,*.pug}]
+[{.stylelintrc,*.css,*.json,*.pug,*.sass,*.scss}]
 indent_size = 2
 indent_style = space
