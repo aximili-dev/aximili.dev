@@ -1,18 +1,20 @@
-.container-sm.ps-3.pe-4.py-2.text-light
-  .row
-    .col
-      h1
-        a.link-info(href="/") Ax
-    .col
-      nav.h-100
-        .row.h-100.align-items-center.justify-content-end
-          .col-sm-auto(class = currentPage === "index" ? "nav-current" : "")
-            a.link-info(href="/") Home
-          .col-sm-auto(class = currentPage === "projects" ? "nav-current" : "")
-            a.link-info(href="/projects") Projects
-          .col-sm-auto(class = currentPage === "blog" ? "nav-current" : "")
-            a.link-info(href="/blog") Blog
-          .col-sm-auto(class = currentPage === "about" ? "nav-current" : "")
-            a.link-info(href="/about") About
-          .col-sm-auto(class = currentPage === "contact" ? "nav-current" : "")
-            a.link-info(href="/contact") Contact
+header
+  nav
+    .nav-item
+      a.nav-item__link.nav-item__link--home(href="/") Ax
+
+    .nav-item
+      a.nav-item__link(href="/", class = currentPage === "index" ? "nav-item__link--current" : "")
+        | Home
+    .nav-item
+      a.nav-item__link(href="/projects", class = currentPage === "projects" ? "nav-item__link--current" : "")
+        | Projects
+    .nav-item
+      a.nav-item__link(href="/blog", class = currentPage === "blog" ? "nav-item__link--current" : "")
+        | Blog
+    .nav-item
+      a.nav-item__link(href="/about", class = currentPage === "about" ? "nav-item__link--current" : "")
+        | About
+    .nav-item
+      a.nav-item__link(href="/contact", class = currentPage === "contact" ? "nav-item__link--current" : "")
+        | Contact

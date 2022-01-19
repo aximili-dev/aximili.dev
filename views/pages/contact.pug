@@ -1,24 +1,21 @@
 extend ../layout
 
 block content
-  .row
-    .col-6
-      h2 Contact
+  main
+    h2 Contact
       p.
         If you want to say hi or have a quick question, hit me up on twitter.
         #[br]
         For anything else, shoot me an email.
 
-      ul.contact.ps-3
-        li
-          .d-inline-flex.flex-row.align-items-center
-            div.align-text-bottom
-              i.bi.bi-twitter.fs-5
-            div.align-baseline.ms-3
-              span.font-monospace
-                a(href="https://twitter.com/aximili_dev") @aximili_dev
-        li
-          .d-inline-flex.flex-row.align-items-center
-            i.bi.bi-mailbox2.fs-5
-            span.font-monospace.ms-3
-              a(href="mailto://aximili.dev@protonmail.com") aximili.dev@protonmail.com
+      ul.contact-list
+        li.contact-list__item
+          .contact-list__item__icon
+            i.bi.bi-twitter
+          .contact-list__item__text
+            a(href="https://twitter.com/aximili_dev") @aximili_dev
+        li.contact-list__item
+          .contact-list__item__icon
+            i.bi.bi-mailbox2
+          .contact-list__item__text
+            a(href="mailto://aximili.dev@protonmail.com") aximili.dev@protonmail.com
