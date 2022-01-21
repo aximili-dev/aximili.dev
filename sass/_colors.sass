@@ -1,0 +1,31 @@
+// Assign colors to elements
+
+@use './mixins'
+@use './variables'
+
+html, body
+  @include mixins.normal-text
+  background: variables.$bg-primary
+
+@mixin header-bg
+  background-color: variables.$bg-secondary
+
+@mixin footer-bg
+  background-color: variables.$bg-secondary
+
+header
+  @include header-bg
+
+.header-fill-r,
+.header-fill-l
+  @include header-bg
+
+footer
+  @include footer-bg
+
+.footer-fill-l,
+.footer-fill-r
+  @include footer-bg
+
+a
+  @include mixins.normal-text

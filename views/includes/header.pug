@@ -1,20 +1,30 @@
 header
   nav
-    .nav-item
+    .nav-item.nav-item--home
       a.nav-item__link.nav-item__link--home(href="/") Ax
 
     .nav-item
       a.nav-item__link(href="/", class = currentPage === "index" ? "nav-item__link--current" : "")
         | Home
+      span.nav-item__bracket.nav-item__bracket--left &#91;
+      span.nav-item__bracket.nav-item__bracket--right &#93;
     .nav-item
       a.nav-item__link(href="/projects", class = currentPage === "projects" ? "nav-item__link--current" : "")
         | Projects
+      span.nav-item__bracket.nav-item__bracket--left &#91;
+      span.nav-item__bracket.nav-item__bracket--right &#93;
     .nav-item
       a.nav-item__link(href="/blog", class = currentPage === "blog" ? "nav-item__link--current" : "")
         | Blog
+      span.nav-item__bracket.nav-item__bracket--left &#91;
+      span.nav-item__bracket.nav-item__bracket--right &#93;
     .nav-item
       a.nav-item__link(href="/about", class = currentPage === "about" ? "nav-item__link--current" : "")
         | About
+      span.nav-item__bracket.nav-item__bracket--left &#91;
+      span.nav-item__bracket.nav-item__bracket--right &#93;
     .nav-item
       a.nav-item__link(href="/contact", class = currentPage === "contact" ? "nav-item__link--current" : "")
         | Contact
+      span.nav-item__bracket.nav-item__bracket--left &#91;
+      span.nav-item__bracket.nav-item__bracket--right &#93;
